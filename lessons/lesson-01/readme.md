@@ -37,8 +37,6 @@ DS | Lesson 1
 <a name="opening"></a>
 ## Welcome to GA! (20 mins)
 
-> Instructor Note: Use the "Day 1 deck" from your local production team
-
 #### GA is a special learning environment
 
 - Introduce the instructors, EIRs, Producers
