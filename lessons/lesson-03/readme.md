@@ -1,5 +1,9 @@
 ---
 title: Statistics Fundamentals
+duration: "1:45"
+creator:
+    name: Amy Roberts
+    city: NYC
 ---
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Statistics Fundamentals
@@ -20,6 +24,14 @@ DS | Lesson 3
 - Create and open an iPython Notebook
 - Have completed all of the python pre-work
 
+### INSTRUCTOR PREP
+*Before this lesson, instructors will need to:*
+
+- Review [project feedback guidelines](../../projects/project-feedback.md)
+- Copy and modify the [lesson slide deck](./assets/slides/slides-3.md)
+- Read through datasets and starter/solution code
+- Add to the "Additional Resources" section for this lesson
+
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
@@ -38,6 +50,8 @@ DS | Lesson 3
 ---
 <a name="opening"></a>
 ## Opening (5 min)
+
+> Instructor Note: Review Prior Lesson Content & Exit Tickets. Discuss Current Objectives.
 
 <a name="introduction"></a>
 ## Intro: Laying the ground work (20 mins)
@@ -148,7 +162,10 @@ A.  For the following groups of numbers, calculate the mean, median and mode by 
 <a name="#codealong1"></a>
 ## Codealong: Summary statistics in Pandas (30 min)
 
+> Instructor Note: Have students open the [starter-code](./code/starter-code/starter-code-3.ipynb). Solutions are available in [the solution-code](./code/solution-code/solution-code-3.ipynb).
+
 ### Codealong Part 1: Basic Stats-
+> Instructor Note: Review "Part 1. Basic Stats" of the [starter-code](./code/starter-code/starter-code-3.ipynb).
 
 We will begin by using pandas to calculate the same Mean, Median, Mode, Max, Min from above.
 
@@ -169,8 +186,25 @@ Quartiles divide a rank-ordered data set into four equal parts. The values that 
 
 The box plot is a handy graph that gives us a nice visual of these metrics, as well as the quartile and the interquartile range.
 
+#### Bias vs Variance
+- **Error due to Bias:** Error due to bias is taken as the *difference between the expected (or average) prediction of our model and the correct value which we are trying to predict.* Imagine you could repeat the whole model building process more than once: each time you gather new data and run a new analysis, thereby creating a new model. Due to randomness in the underlying data sets, the resulting models will have a range of predictions. Bias measures **how far off in general these models' predictions are from the correct value.**  
+
+- **Error due to Variance:** The error due to variance is taken as *the variability of a model prediction for a given data point.* Again, imagine you can repeat the entire model building process multiple times. The variance is **how much the predictions for a given point vary between different realizations of the model.**
+
+![](./assets/images/biasVsVarianceImage.png)
+
 #### Standard Deviation
 In statistics, the standard deviation (SD, also represented by the Greek letter sigma `σ` for the population standard deviation, or just `s` for the sample standard deviation) is a measure that is used to quantify the amount of variation or dispersion of a set of data values. **Standard deviation is the square root of the variance.**
+
+#### Standard Error
+The _standard error of the mean_ (SEM) quantifies the precision of the mean. It is a measure of **how far your sample mean is likely to be from the true population mean**. It is expressed in the same units as the data.
+
+As the standard error of an estimated value generally increases with the size of the estimate, a large standard error may not necessarily result in an unreliable estimate. Therefore it is often better to compare the error in relation to the size of the estimate.
+
+The regression line is the line that minimizes the sum of squared deviations of prediction (also called the sum of squares error). The standard error of the estimate is closely related to this quantity.
+
+> Instructors: You may want to demo the Central Limit Theorem at this point
+with 9this notebook](code/Central Limit Theorem.ipynb)
 
 ### Codealong Part 3: Standard Deviation & Variance
 > Instructor Note: Review "Part 3. SD & Variance" of the [starter-code](./code/starter-code/starter-code-3.ipynb).
@@ -187,10 +221,10 @@ The correlation is a quantity measuring the extent of interdependence of variabl
 
 **Check:**
 
-1. What is a commonly used metric that describes variance?
->	- A: "STD"
+1. What is the difference between bias and variance?
+>	- A: see graphic above
 
-2. How do we compute this?
+2. What is a commonly used metric that describes variance?
 >	- A: "STD"
 
 3. What is the formula for this metric?
@@ -216,10 +250,13 @@ Kurtosis is a measure of whether the data are peaked or flat relative to a norma
 
 <a name="demo"></a>
 ## Demo: Determining the distribution of your data (15 mins)
+> Instructor Note: Use the [lesson-3-demo](./code/lesson-3-demo.ipynb) for this section. Walk through each section of the notebook in order.
 
 
 <a name="guidedpractice2"></a>
 ## Guided Practice: Is this skewed? (10 mins)
+
+> Instructor Note: Walk through images of normal, skewed, sigmoid (etc) distributions. Stand up and vote on the types. After each image, discuss methods of correcting the issue. Use your own work or review [the sample images from the asset folder](./assets/images/).
 
 For example:
 
@@ -288,7 +325,7 @@ It's important to understand the concept before we use `get_dummies` so today we
 
 > Instructor Note: Have each student draw a table (like we did above) on the white board or table.
 
-Create dummy variables for the variable "colors" that has 6 categories: blue, red, green, purple, grey, brown. Set grey as the reference.
+Create dummy variables for the variable "colors" that has 6 categories: blue, red, green, purple, grey, brown. Set grey as the reference. 
 
 > Answer:
 	| color_blue | color_red | color_green | color_purple | color_brown
