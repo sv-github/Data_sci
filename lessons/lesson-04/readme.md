@@ -122,8 +122,6 @@ You will also get practice looking at the output and understanding how the model
 <a name="wrapup"></a>
 ## Conclusion: Questions (15 mins)
 
-> Instructor Note: Go over the [lab solutions](./code/solution-code/lab-solution-code-4.ipynb) with the class and clarify any confusing points or remaining questions.
-
 Any questions?
 
 ***
