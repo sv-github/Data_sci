@@ -3,7 +3,7 @@ title: Data Manipulation and Visualization
 duration: "2:30"
 creator:
     name: Seth Weidman
-    city: NYC
+    city: Chi-town
 ---
 
 ### LEARNING OBJECTIVES
