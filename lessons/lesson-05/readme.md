@@ -49,8 +49,6 @@ creator:
 <a name="review2"></a>
 ## Review project 3 (15 mins)
 
-"Plotting with Pandas" notebook
-
 <a name="lecture2"></a>
 ## Plotting with Pandas (60 mins)
 
