@@ -1,0 +1,8 @@
+CPU,declined,135000
+CPU,pending,40000
+CPU,presented,60000
+CPU,won,230000
+Maintenance,pending,15000
+Maintenance,won,7000
+Monitor,presented,5000
+Software,presented,30000
